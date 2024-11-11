@@ -86,7 +86,7 @@ class StudentProfileForm(UserCreationForm):
             # Save the user to the database
             user.is_student = True
             user.first_name = self.cleaned_data['first_name']
-            user.last_name = self.cleaned_data['last_name']
+            user.surname = self.cleaned_data['surname']
             user.phone = self.cleaned_data['phone']
             user.save()
 
